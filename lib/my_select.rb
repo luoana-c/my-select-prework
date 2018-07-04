@@ -3,10 +3,11 @@ def my_select(collection)
   new_collection = []
   while i < collection.length 
     item = yield collection[i]
-    i += 1 
+     
     if item
       new_collection.push(collection[i])
     end
+    i += 1
   end
   return new_collection
 end
